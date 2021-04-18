@@ -1,0 +1,249 @@
+/*
+LOBAL SETTINGS
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Primary */
+  --clr-dark-green: hsl(179, 62%, 43%);
+  --clr-light-green: hsl(71, 73%, 54%);
+  /* Neutral */
+  --bg-clr-gray: hsl(204, 43%, 93%);
+  --clr-light-grey: hsl(218, 22%, 67%);
+}
+
+body {
+  background-color: var(--bg-clr-gray);
+  font-family: 'Karla', sans-serif;
+}
+
+/*
+BOOTSTRAP
+*/
+
+.f-600 {
+  font-weight: 600;
+}
+
+.f-400 {
+  font-weight: 400;
+}
+
+.clr-dark-green {
+  color: var(--clr-dark-green);
+}
+
+.clr-light-green {
+  color: var(--clr-light-green);
+}
+
+.clr-light-grey {
+  color: var(--clr-light-grey);
+}
+
+.clr-white {
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p2-up-down {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.p2424 {
+  padding: 2rem 4rem 2rem 4rem;
+}
+
+
+/*
+MOBILE QUERIES
+375px
+*/
+
+@media (min-width: 375px) {
+
+  body {
+    margin: 7vh 8vw;
+  }
+
+  .p2424 {
+    padding: 2rem;
+  }
+
+  .container {
+    box-shadow: 9px 16px 25px -17px rgba(0, 0, 0, 0.32);
+    border-radius: 15px;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .join {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .join p, h5 {
+    padding-top: 1rem;
+  }
+
+  .join p {
+
+    line-height: 1.8;
+    font-size: 3.3vw;
+  }
+
+  .monthly {
+    background-color: var(--clr-dark-green);
+    padding-top: 2rem;
+    align-self: center;
+    width: 100%;
+  }
+
+  .s29 {
+    font-size: 3.5vh;
+  }
+
+  .monthly-price {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 .5rem 0;
+  }
+
+  .monthly-price>p {
+    opacity: .6;
+    letter-spacing: .5px;
+    margin-left: 1rem;
+  }
+
+  .monthly p {
+    font-size: 4vw;
+  }
+
+  .monthly button {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--clr-light-green);
+    box-shadow: 1px 8px 17px -4px rgba(0, 0, 0, 0.3);
+    outline: none;
+    border: 0;
+    font-size: 3.5vw;
+    font-weight: 600;
+    color: white;
+    padding: .7rem 6rem;
+    border-radius: 5px;
+    display: block;
+    margin-top: 1.5rem;
+  }
+
+  .why-us {
+    background-color: #4abebd;
+  }
+
+  .why-us ul li {
+    list-style-type: none;
+    letter-spacing: .5px;
+    line-height: 1.5;
+    font-size: 3vw;
+    opacity: .8;
+  }
+
+  .why-us {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .why-us>h4 {
+    padding: 0 0 1rem 0;
+  }
+
+  .bottom-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+
+/* -------------------------------------------------*/
+/*  --- 1440px --- */
+/* -------------------------------------------------*/
+
+@media (min-width: 1440px) {
+
+  body {
+    margin: auto;
+  }
+
+  .container {
+    margin: 15vh auto;
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+  }
+
+  .join p {
+    font-size: 1.1vw;
+  }
+
+  .join h3{
+    font-size: 1.5rem;
+  }
+
+  .join h5{
+    font-size: 1rem;
+  }
+
+
+  .bottom-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+
+
+  .monthly h4, .why-us h4{
+    font-size: 1.3rem;
+  }
+
+  .monthly, .why-us {
+    padding: 3rem 2rem;
+    align-self: stretch;
+    border-radius: 0;
+  }
+
+  .why-us ul li {
+    font-size: 1.7vh;
+  }
+
+  .monthly-price>p {
+    font-size: 3.5rem;
+    margin-left: 1rem;
+  }
+
+  .monthly p {
+    font-size: 1rem;
+  }
+  .monthly button {
+    font-size: 1rem;
+    padding: 1rem 6rem;
+    border-radius: 5px;
+    display: block;
+    margin-top: 2rem;
+
+  }
+
+
+
+}
